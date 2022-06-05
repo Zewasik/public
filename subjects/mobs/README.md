@@ -35,7 +35,7 @@ You will also need to create two submodules of mob:
     - `name`: `String`
     - `role`: `Role`
     - `age`: `u8`
-    `get_promotion`: an associated function which when invoked should promote the member from:
+    - `get_promotion`: an associated function which when invoked should promote the member from:
       - `Associate` -> `Soldier`
       - `Soldier` -> `Caporegime`
       - `Caporegime` -> `Underboss`
