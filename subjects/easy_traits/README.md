@@ -20,11 +20,11 @@ struct StringValue {
 }
 
 trait AppendStr {
-    fn append_str(self, new_str: String) -> Self;
+    fn append_str(&mut self, new_str: String) -> Self;
 
-    fn append_number(self, new_number: f64) -> Self;
+    fn append_number(&mut self, new_number: f64) -> Self;
 
-    fn remove_punctuation_marks(self) -> Self;
+    fn remove_punctuation_marks(&mut self) -> Self;
 }
 
 impl AppendStr for StringValue {
